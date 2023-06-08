@@ -1,48 +1,40 @@
 <!doctype html>
 <html class="no-js">
-  <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Accessing Investment Data" href="morningstar_data.html" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Lumache’s documentation! &mdash; Lumache 0.1 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-    <link rel="canonical" href="https://rfqu-docs.readthedocs.io/en/latest/index.html" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+    <meta name="generator" content="sphinx-4.5.0, furo 2021.10.09"/>
+        <title>Morningstar Data Documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=0254c309f5cadf746f1a613e7677379ac9c8cdcd" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
+    <link rel="stylesheet" type="text/css" href="_static/css/custom.css" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-        <script src="_static/jquery.js"></script>
-        <script src="_static/underscore.js"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script src="_static/doctools.js"></script>
-        <script src="_static/sphinx_highlight.js"></script>
-        <script async="async" src="/_/static/javascript/readthedocs-doc-embed.js"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Usage" href="usage.html" /> 
-
-<!-- RTD Extra Head -->
-
-<link rel="stylesheet" href="/_/static/css/readthedocs-doc-embed.css" type="text/css" />
-
-<script type="application/json" id="READTHEDOCS_DATA">{"ad_free": false, "api_host": "https://readthedocs.org", "build_date": "2023-06-05T17:59:32Z", "builder": "sphinx", "canonical_url": null, "commit": "39ce4905", "docroot": "/docs/source/", "features": {"docsearch_disabled": false}, "global_analytics_code": "UA-17997319-1", "language": "en", "page": "index", "programming_language": "words", "project": "rfqu-docs", "proxied_api_host": "/_", "source_suffix": ".rst", "subprojects": {}, "theme": "sphinx_rtd_theme", "user_analytics_code": "", "version": "latest"}</script>
-
-<!--
-Using this variable directly instead of using `JSON.parse` is deprecated.
-The READTHEDOCS_DATA global variable will be removed in the future.
--->
-<script type="text/javascript">
-READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerHTML);
-</script>
-
-<script type="text/javascript" src="/_/static/javascript/readthedocs-analytics.js" async="async"></script>
-
-<!-- end RTD <extrahead> -->
-<script language="javascript" src="/_/static/javascript/readthedocs-client.js"></script></head>
-  </head>
+  }
+  body[data-theme="dark"] {
+    --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+  }
+  @media (prefers-color-scheme: dark) {
+    body:not([data-theme="light"]) {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+  }
+</style></head>
   <body>
     <script>
       document.body.dataset.theme = localStorage.getItem("theme") || "auto";
@@ -169,14 +161,11 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/assetflow.html">Asset Flow Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/custom_database.html">Custom Database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/data_set.html">Data Sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="morningstar_data/datalake.html">DataLake</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/holdings.html">Holdings Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/investment.html">Investment Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/lists.html">Investment Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/lookup.html">Lookup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="morningstar_data/peer_group.html">Peer Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/performance_report.html">Performance Reports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="morningstar_data/portfolio_list.html">Portfolio List</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/search_criteria.html">Search Criteria</a></li>
 </ul>
 </li>
@@ -184,19 +173,115 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
 <li class="toctree-l2"><a class="reference internal" href="portfolio/data_set.html">Data Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="portfolio/holding.html">Holdings Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="portfolio/portfolio_data.html">Portfolio Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="portfolio/save_portfolio.html">Save Portfolio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="portfolio/portfolio_list.html">Portfolio List</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="utilities.html">Utility Functions</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" role="switch" type="checkbox"/><label for="toctree-checkbox-3"><div class="visually-hidden">Toggle child pages in navigation</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="utilities/deliver.html">Deliver</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html#morningstar-data-0-18-7a58-2023-03-17">Morningstar_Data 0.18.7a58 (2023-03-17)</a></li>
 </ul>
 
 </div>
 <div class="sidebar-tree">
+  
+  <ul class="current">
+    <li id="morningstar-data-versions-dropdowns" class="toctree-l1 currrent has-children">
+      <h3 class=" internal">Versions</h3>
+      <input checked class="toctree-checkbox" id="toctree-checkbox-version" name="toctree-checkbox-version"
+        role="switch" type="checkbox" />
+      <label id="versions-arrow" for="toctree-checkbox-version">
+        <div class="visually-hidden">Toggle child pages in navigation</div>
+        <i class="icon">
+          <svg>
+            <use href="#svg-arrow-right"></use>
+          </svg>
+        </i>
+      </label>
+      <ul id="version-tag-list" class="current">
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="index.html">0.13.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.1/index.html">0.13.1</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.2/index.html">0.13.2</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.3/index.html">0.13.3</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.4/index.html">0.13.4</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.5/index.html">0.13.5</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.6/index.html">0.13.6</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.7/index.html">0.13.7</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.13.8/index.html">0.13.8</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.14.0/index.html">0.14.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.15.0/index.html">0.15.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.15.1/index.html">0.15.1</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.16.0/index.html">0.16.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.16.1/index.html">0.16.1</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.17.0/index.html">0.17.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.0/index.html">0.18.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.1/index.html">0.18.1</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.2/index.html">0.18.2</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.3/index.html">0.18.3</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.4/index.html">0.18.4</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.5/index.html">0.18.5</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.18.6/index.html">0.18.6</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.19.0/index.html">0.19.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../0.19.1/index.html">0.19.1</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../1.0.0/index.html">1.0.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../1.1.0/index.html">1.1.0</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../1.1.1/index.html">1.1.1</a>
+        </li>
+        <li class="toctree-l2 ">
+          <a class="reference internal version-tag" href="../latest-prerelease/index.html">latest-prerelease</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
   
 </div></div>
       </div>
@@ -230,14 +315,11 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/assetflow.html">Asset Flow Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/custom_database.html">Custom Database</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/data_set.html">Data Sets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="morningstar_data/datalake.html">DataLake</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/holdings.html">Holdings Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/investment.html">Investment Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/lists.html">Investment Lists</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/lookup.html">Lookup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="morningstar_data/peer_group.html">Peer Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/performance_report.html">Performance Reports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="morningstar_data/portfolio_list.html">Portfolio List</a></li>
 <li class="toctree-l2"><a class="reference internal" href="morningstar_data/search_criteria.html">Search Criteria</a></li>
 </ul>
 </li>
@@ -245,17 +327,7 @@ READTHEDOCS_DATA = JSON.parse(document.getElementById('READTHEDOCS_DATA').innerH
 <li class="toctree-l2"><a class="reference internal" href="portfolio/data_set.html">Data Sets</a></li>
 <li class="toctree-l2"><a class="reference internal" href="portfolio/holding.html">Holdings Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="portfolio/portfolio_data.html">Portfolio Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="portfolio/save_portfolio.html">Save Portfolio</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="utilities.html">Utility Functions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="utilities/deliver.html">Deliver</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html#morningstar-data-0-18-7a58-2023-03-17">Morningstar_Data 0.18.7a58 (2023-03-17)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#features">Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="changelog.html#trivial-internal-changes">Trivial/Internal Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="portfolio/portfolio_list.html">Portfolio List</a></li>
 </ul>
 </li>
 </ul>
