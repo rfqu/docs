@@ -1,0 +1,30 @@
+#morningstar-data-versions-dropdowns>h3 {
+    box-sizing: border-box;
+    display: inline-block;
+    line-height: var(--sidebar-item-line-height);
+    text-decoration: none;
+    margin-top: 0;
+    height: 100%;
+    width: 100%;
+    padding: var(--sidebar-item-spacing-vertical) var(--sidebar-item-spacing-horizontal);
+    font-weight: 400;
+}
+
+
+#morningstar-data-versions-dropdowns>label>.icon {
+    color: white;
+}
+
+
+/* display the morningstar-data version tags in descending order */
+#version-tag-list {
+    transform: rotate(180deg);
+}
+
+#version-tag-list>li {
+    transform: rotate(-180deg);
+}
+
+.current-tag {
+    color: #2b8cee !important;
+}
